@@ -1,0 +1,329 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hallo Tech | Service</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Hallo Tech" name="keywords">
+    <meta content="IT & Solutions " name="description">
+
+    <!-- Favicon -->
+    <link href="{% static "img/icon.png"%}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css"%}" rel="stylesheet">
+    <link href="{% static "lib/animate/animate.min.css"%}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static "css/bootstrap.min.css"%}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static "css/style.css"%}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="{% url 'app1:h'%}" class="navbar-brand p-0">
+                <img src="{% static "img/logo.png" %}" alt="" width="80" height="105" id="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="{% url 'app1:h'%}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'app1:about'%}" class="nav-item nav-link">About</a>
+                    <a href="{% url 'app1:service'%}" class="nav-item nav-link active">Services</a>
+                    <a href="{% url 'app1:project'%}" class="nav-item nav-link">Projects</a>
+                </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
+                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class='bx bxs-brain' style=" color: white;"></i>
+                        </div>
+                        <h4 class="mb-3">AI/ML Projects</h4>
+                        <p class="m-0">Empower your future with cutting-edge AI/ML solutions, where innovation meets completion, transforming ideas into reality</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-code text-white"></i>
+
+                        </div>
+                        <h4 class="mb-3">Web Development</h4>
+                        <p class="m-0">Elevate your online presence with expertly crafted web solutions - where every click unlocks a seamless and engaging digital experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class='bx bx-globe' style=" color: white;"></i>
+
+                        </div>
+                        <h4 class="mb-3">IOT Projects</h4>
+                        <p class="m-0">Elevate connectivity and efficiency with our IoT project development, where innovation converges with real-world applications, shaping a smarter and interconnected future.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class='bx bx-chip' style=" color: white;"></i>
+
+                        </div>
+                        <h4 class="mb-3">Hardware Projects</h4>
+                        <p class="m-0">Unlock the potential of innovation with our hardware project development services, bridging the gap between imagination and reality for a tech-driven tomorrow.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-search text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Media Creation</h4>
+                        <p class="m-0">Streamline your journey with our documentation services, where precision meets clarity, empowering your projects with comprehensive and user-friendly documentation</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                        <h3 class="text-white mb-3">Call Us To Know More</h3>
+                        <p class="text-white mb-3">We offer all these services with reasonable price</p>
+                        <h2 class="text-white mb-0">+917305905163</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    
+     <!-- Quote Start -->
+     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
+                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
+                        </div>
+                    </div>
+                    <p class="mb-4">If you have any questions regarding our services or price, please don't hesitate to contact us. Whether you have a specific project in mind or simply want to look into your choices, we can help. Please contact us immediately to explore how we may help you! .</p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+917305905163</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <form method="POST">
+                            <div class="row g-3">
+                                {% csrf_token %}
+                                <input type="hidden" name="access_key" value="2da750cf-4e20-4a2e-9d49-68505ebab4fd">
+                                <div class="col-xl-12">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control bg-light border-0" id="name" name="name" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control bg-light border-0" id="email" name="email" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="service" class="form-label">Select A Service</label>
+                                    <select class="form-select bg-light border-0" id="service" name="service" style="height: 55px;">
+                                        <option value="" selected disabled>Select A Service</option>
+                                        <option value="Ai/Ml">AI/ML</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="IOT projects">IoT Projects</option>
+                                        <option value="Hardware Projects">Hardware Projects</option>
+                                        <option value="Media Creations">Media Creations</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control bg-light border-0" id="message" name="message" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Service</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="{% url 'app1:h'%}" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Hallo Tech</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Hallo Tech is committed to helping student initiatives because it thinks they can lead to ground-breaking discoveries. We support students as they start their project journeys by offering advice and encouragement with an emphasis on education, technology, and entrepreneurship. By encouraging creativity and assisting students in transforming their ideas into practical solutions, we enable the next generation of innovators.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">hallotechofficial@gmail.com
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+917305905163</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://twitter.com/techhallo" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=61556637045431" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/in/hallo-tech-76540b2b8/" target="_blank"><i class="fab fa-linkedin-in fw-normal" target="_blank"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://www.instagram.com/hallotechofficial/" target="_blank"><i class="fab fa-instagram fw-normal" target="_blank"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="{% url 'app1:h'%}"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="{% url 'app1:about'%}"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="{% url 'app1:project'%}"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light" href="{% url 'app1:project'%}"><i class="bi bi-arrow-right text-primary me-2"></i>Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy;Hallotech. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static "lib/wow/wow.min.js" %}"></script>
+    <script src="{% static "lib/easing/easing.min.js" %}"></script>
+    <script src="{% static "lib/waypoints/waypoints.min.js" %}"></script>
+    <script src="{% static "lib/counterup/counterup.min.js" %}"></script>
+    <script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static "js/main.js" %}"></script>
+    <script>
+    document.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        var navbarLogo = document.getElementById('navbar-logo');
+        var scrollPosition = window.scrollY;
+        var threshold = 100;
+
+        if (scrollPosition > threshold) {
+            navbarLogo.src = "{% static 'img/logo_black.png' %}";
+        } else {
+            navbarLogo.src = "{% static 'img/logo.png' %}";
+        }
+    });
+</script>
+ 
+</body>
+
+</html>

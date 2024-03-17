@@ -1,0 +1,10 @@
+dj-database-url
+Django>
+psycopg2-binary
+pytz
+tzdata
+gunicorn
+django-widget-tweaks
+django-crispy-forms
+Pillow
+whitenoise
